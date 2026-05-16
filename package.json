@@ -1,12 +1,12 @@
 {
-  "name": "CherryStudio",
+  "name": "OriginAi",
   "version": "1.9.6",
   "private": true,
-  "description": "A powerful AI assistant for producer.",
-  "desktopName": "CherryStudio.desktop",
+  "description": "Origin Ai - A powerful AI assistant, compatible with Cherry Studio.",
+  "desktopName": "OriginAi.desktop",
   "main": "./out/main/index.js",
-  "author": "support@cherry-ai.com",
-  "homepage": "https://github.com/CherryHQ/cherry-studio",
+  "author": "Origin Ai",
+  "homepage": "https://github.com/euphoriaer/Origin-ai",
   "engines": {
     "node": ">=24.11.1"
   },

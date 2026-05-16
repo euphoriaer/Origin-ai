@@ -12,7 +12,7 @@ import { windowService } from './WindowService'
 
 const logger = loggerService.withContext('ProtocolClient')
 
-export const CHERRY_STUDIO_PROTOCOL = 'cherrystudio'
+export const CHERRY_STUDIO_PROTOCOL = 'originai'
 
 export function registerProtocolClient(app: Electron.App) {
   if (process.defaultApp) {
