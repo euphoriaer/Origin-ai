@@ -198,13 +198,13 @@ export const GB = 1024 * MB
 export const defaultLanguage = 'en-US'
 
 export enum FeedUrl {
-  PRODUCTION = 'https://github.com/euphoriaer/Origin-ai/releases',
-  GITHUB_LATEST = 'https://github.com/euphoriaer/Origin-ai/releases/latest/download'
+  PRODUCTION = 'https://github.com/euphoriaer/Origin/releases',
+  GITHUB_LATEST = 'https://github.com/euphoriaer/Origin/releases/latest/download'
 }
 
 export enum UpdateConfigUrl {
-  GITHUB = 'https://raw.githubusercontent.com/euphoriaer/Origin-ai/refs/heads/main/app-upgrade-config/app-upgrade-config.json',
-  GITCODE = 'https://raw.githubusercontent.com/euphoriaer/Origin-ai/refs/heads/main/app-upgrade-config/app-upgrade-config.json'
+  GITHUB = 'https://raw.githubusercontent.com/euphoriaer/Origin/refs/heads/main/app-upgrade-config/app-upgrade-config.json',
+  GITCODE = 'https://raw.githubusercontent.com/euphoriaer/Origin/refs/heads/main/app-upgrade-config/app-upgrade-config.json'
 }
 
 export enum UpgradeChannel {
@@ -499,8 +499,8 @@ export interface GitBashPathInfo {
 export const CHERRYIN_CONFIG = {
   CLIENT_ID: '2a348c87-bae1-4756-a62f-b2e97200fd6d',
   ALLOWED_HOSTS: ['https://open.cherryin.ai', 'https://open.cherryin.dev'],
-  REDIRECT_URI: 'originai://oauth/callback',
+  REDIRECT_URI: 'origin://oauth/callback',
   SCOPES: 'openid profile email offline_access balance:read usage:read tokens:read tokens:write'
 }
 
-export const APP_NAME = 'Origin Ai'
+export const APP_NAME = 'Origin'

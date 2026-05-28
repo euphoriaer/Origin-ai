@@ -1,20 +1,20 @@
 {
-  "name": "OriginAi",
+  "name": "Origin",
   "version": "1.9.6",
   "private": true,
-  "description": "Origin Ai - A powerful AI assistant, compatible with Cherry Studio.",
-  "desktopName": "OriginAi.desktop",
+  "description": "Origin - 强大的 AI 助手",
+  "desktopName": "Origin.desktop",
   "main": "./out/main/index.js",
-  "author": "Origin Ai",
-  "homepage": "https://github.com/euphoriaer/Origin-ai",
+  "author": "Origin",
+  "homepage": "https://github.com/euphoriaer/Origin",
   "engines": {
     "node": ">=24.11.1"
   },
   "scripts": {
     "start": "electron-vite preview",
-    "generate:openapi": "tsx scripts/generate-openapi-spec.ts && biome format --write src/main/apiServer/generated/openapi-spec.json",
-    "openapi:check": "tsx scripts/generate-openapi-spec.ts --check",
-    "dev": "npm run generate:openapi && dotenv electron-vite dev",
+    "generate:openapi": "node --import tsx scripts/generate-openapi-spec.ts && biome format --write src/main/apiServer/generated/openapi-spec.json",
+    "openapi:check": "node --import tsx scripts/generate-openapi-spec.ts --check",
+    "dev": "pnpm generate:openapi && dotenv electron-vite dev",
     "dev:watch": "dotenv electron-vite dev -- -w",
     "debug": "electron-vite -- --inspect --sourcemap --remote-debugging-port=9222",
     "build": "npm run generate:openapi && npm run typecheck && electron-vite build",

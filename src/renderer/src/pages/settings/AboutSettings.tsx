@@ -81,7 +81,7 @@ const AboutSettings: FC = () => {
   }
 
   const showEnterprise = async () => {
-    onOpenWebsite('https://github.com/euphoriaer/Origin-ai')
+    onOpenWebsite('https://github.com/euphoriaer/Origin')
   }
 
   const showReleases = async () => {
@@ -170,7 +170,7 @@ const AboutSettings: FC = () => {
 
   const onOpenDocs = () => {
     const isChinese = i18n.language.startsWith('zh')
-    void window.api.openWebsite('https://github.com/euphoriaer/Origin-ai')
+    void window.api.openWebsite('https://github.com/euphoriaer/Origin')
   }
 
   return (
@@ -179,7 +179,7 @@ const AboutSettings: FC = () => {
         <SettingTitle>
           {t('settings.about.title')}
           <HStack alignItems="center">
-            <Link to="https://github.com/euphoriaer/Origin-ai">
+            <Link to="https://github.com/euphoriaer/Origin">
               <GithubOutlined style={{ marginRight: 4, color: 'var(--color-text)', fontSize: 20 }} />
             </Link>
           </HStack>
@@ -187,7 +187,7 @@ const AboutSettings: FC = () => {
         <SettingDivider />
         <AboutHeader>
           <Row align="middle">
-            <AvatarWrapper onClick={() => onOpenWebsite('https://github.com/euphoriaer/Origin-ai')}>
+            <AvatarWrapper onClick={() => onOpenWebsite('https://github.com/euphoriaer/Origin')}>
               {update.downloadProgress > 0 && (
                 <ProgressCircle
                   type="circle"
@@ -204,7 +204,7 @@ const AboutSettings: FC = () => {
               <Title>{APP_NAME}</Title>
               <Description>{t('settings.about.description')}</Description>
               <Tag
-                onClick={() => onOpenWebsite('https://github.com/euphoriaer/Origin-ai/releases')}
+                onClick={() => onOpenWebsite('https://github.com/euphoriaer/Origin/releases')}
                 color="cyan"
                 style={{ marginTop: 8, cursor: 'pointer' }}>
                 v{version}
@@ -299,7 +299,7 @@ const AboutSettings: FC = () => {
             <Globe size={18} />
             {t('settings.about.website.title')}
           </SettingRowTitle>
-          <Button onClick={() => onOpenWebsite('https://github.com/euphoriaer/Origin-ai')}>{t('settings.about.website.button')}</Button>
+          <Button onClick={() => onOpenWebsite('https://github.com/euphoriaer/Origin')}>{t('settings.about.website.button')}</Button>
         </SettingRow>
         <SettingDivider />
         <SettingRow>
@@ -307,7 +307,7 @@ const AboutSettings: FC = () => {
             <Github size={18} />
             {t('settings.about.feedback.title')}
           </SettingRowTitle>
-          <Button onClick={() => onOpenWebsite('https://github.com/euphoriaer/Origin-ai/issues/new/choose')}>
+          <Button onClick={() => onOpenWebsite('https://github.com/euphoriaer/Origin/issues/new/choose')}>
             {t('settings.about.feedback.button')}
           </Button>
         </SettingRow>

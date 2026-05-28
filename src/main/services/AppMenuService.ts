@@ -99,25 +99,25 @@ export class AppMenuService {
           {
             label: appMenu.website,
             click: () => {
-              void shell.openExternal('https://github.com/euphoriaer/Origin-ai')
+              void shell.openExternal('https://github.com/euphoriaer/Origin')
             }
           },
           {
             label: appMenu.documentation,
             click: () => {
-              void shell.openExternal('https://github.com/euphoriaer/Origin-ai')
+              void shell.openExternal('https://github.com/euphoriaer/Origin')
             }
           },
           {
             label: appMenu.feedback,
             click: () => {
-              void shell.openExternal('https://github.com/euphoriaer/Origin-ai/issues/new/choose')
+              void shell.openExternal('https://github.com/euphoriaer/Origin/issues/new/choose')
             }
           },
           {
             label: appMenu.releases,
             click: () => {
-              void shell.openExternal('https://github.com/euphoriaer/Origin-ai/releases')
+              void shell.openExternal('https://github.com/euphoriaer/Origin/releases')
             }
           }
         ]

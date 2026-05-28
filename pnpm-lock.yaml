@@ -1299,6 +1299,22 @@ importers:
         specifier: 0.4.7
         version: 0.4.7
 
+  node_modules/.pnpm/electron@41.2.1/node_modules/electron:
+    dependencies:
+      '@electron/get':
+        specifier: ^2.0.0
+        version: 2.0.3
+      '@types/node':
+        specifier: ^24.9.0
+        version: 24.10.4
+      extract-zip:
+        specifier: ^2.0.1
+        version: 2.0.1
+    devDependencies:
+      tsx:
+        specifier: ^4.21.0
+        version: 4.21.0
+
   packages/ai-sdk-provider:
     dependencies:
       '@ai-sdk/anthropic':
@@ -21446,7 +21462,7 @@ snapshots:
       es6-error: 4.1.1
       matcher: 3.0.0
       roarr: 2.15.4
-      semver: 7.7.1
+      semver: 7.7.3
       serialize-error: 7.0.1
     optional: true
 
@@ -26123,7 +26139,7 @@ snapshots:
   tsx@4.21.0:
     dependencies:
       esbuild: 0.25.12
-      get-tsconfig: 4.13.0
+      get-tsconfig: 4.13.6
     optionalDependencies:
       fsevents: 2.3.3
 
